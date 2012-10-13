@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    	<!-- 	select paper begin -->
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:padding="5dip" >
+    
+   		<TextView
+            android:id="@+id/lblAuditorList"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+            android:text="@string/lbl_auditor_list"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_alignParentLeft="true" 
+            android:paddingRight="20dp"
+		/>
+   		
+   		<TextView
+        android:id="@+id/txtAuditorList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  		android:paddingLeft="5dip"
+  		android:paddingRight="50dip"
+        android:layout_toRightOf="@+id/lblAuditorList"
+
+        
+        android:typeface="sans" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+   		
+		<ImageButton 
+		    android:id="@+id/btnSelect"
+		    android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+		    android:src="@drawable/ic_arrow"
+		    android:layout_alignParentRight="true"
+     		android:layout_centerVertical="true"
+     		android:onClick="btnSelectAuditor"
+     		/>
+   		
+	
+	</RelativeLayout>
+        
+        	<ListView 	android:id="@+id/auditorList"
+	    	  	android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			
+    			/>
+        	
+        	</LinearLayout>
+	
+	
+

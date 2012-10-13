@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<!-- 	select paper begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    
+   		<TextView
+            android:id="@+id/lblBpName"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+            android:text="@string/lbl_bp_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_alignParentLeft="true" 
+            android:paddingRight="20dp"
+		/>
+   		
+   		<TextView
+        android:id="@+id/halqForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  		android:paddingLeft="5dip"
+  		android:paddingRight="50dip"
+        android:layout_toRightOf="@+id/lblBpName"
+
+        
+        android:typeface="sans" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+   		
+		<ImageButton 
+		    android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+		    android:src="@drawable/ic_arrow"
+		    android:layout_alignParentRight="true"
+     		android:layout_centerVertical="true"
+     		android:onClick="btnSelectHalqForm"
+     		/>
+   		
+</RelativeLayout>
+<TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    <TableRow >
+        <TextView
+    		android:id="@+id/textView1"
+    		android:layout_weight="1"
+    		android:layout_height="wrap_content"
+    		android:text="@string/lbl_address_office"
+    		android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+    		android:id="@+id/officeAddr"
+    		android:layout_weight="3"
+    		android:layout_height="wrap_content"
+    		android:inputType="textMultiLine"
+    		android:lines="3"
+    		android:gravity="top"
+    		android:enabled="false"
+    		
+    		>
+    		</EditText>
+    </TableRow>
+    <TableRow >
+        <TextView
+    		android:id="@+id/textView1"
+    		android:layout_weight="1"
+    		android:layout_height="wrap_content"
+    		android:text="@string/lbl_address_factory"
+    		android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+    		android:id="@+id/factoryAddr"
+    		android:layout_weight="3"
+    		android:layout_height="wrap_content"
+   	 		android:inputType="textMultiLine"
+    		android:lines="3"
+    		android:gravity="top"
+    		android:enabled="false"
+    		>
+		</EditText>
+    </TableRow>
+    <TableRow >
+        <TextView
+    		android:id="@+id/textView1"
+    		android:layout_weight="1"
+    		android:layout_height="wrap_content"
+    		android:text="@string/lbl_num_of_employee"
+    		android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+    		android:id="@+id/numOfEmp"
+    		android:layout_weight="3"
+    		android:layout_height="wrap_content"
+   	 		android:inputType="numberDecimal"
+   	 		android:enabled="false"
+   	 		>
+		</EditText>
+    </TableRow>
+    <TableRow >
+        <TextView
+    		android:id="@+id/textView1"
+    		android:layout_weight="1"
+    		android:layout_height="wrap_content"
+    		android:text="@string/lbl_num_of_muslim"
+    		android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+    		android:id="@+id/numOfMuslim"
+    		android:layout_weight="3"
+    		android:layout_height="wrap_content"
+   	 		android:inputType="numberDecimal"
+   	 		android:enabled="false"
+   	 		>
+		</EditText>
+    </TableRow>
+    <TableRow >
+        <TextView
+    		android:id="@+id/textView1"
+    		android:layout_weight="1"
+    		android:layout_height="wrap_content"
+    		android:text="@string/lbl_num_of_foreigner"
+    		android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+    		android:id="@+id/numOfForeigner"
+    		android:layout_weight="3"
+    		android:layout_height="wrap_content"
+   	 		android:inputType="numberDecimal"
+   	 		android:enabled="false"
+   	 		>
+		</EditText>
+    </TableRow>
+    
+    
+</TableLayout>
+
+
+
+
+
+
+</LinearLayout>
+<!-- <Button -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content"  -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:text="@string/lbl_button_ok" -->
+<!--         android:onClick="onButtonClick"/> -->
+</RelativeLayout>

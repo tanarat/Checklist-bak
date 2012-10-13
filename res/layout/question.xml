@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvQuestionText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        />
+
+    <RadioGroup
+        android:id="@+id/choices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="20dip"
+        android:orientation="horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        />
+
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        >
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="หมายเหตุ"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        />
+    <EditText
+        android:id="@+id/tvRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="20dip"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:lines="5"
+        />
+
+
+
+</LinearLayout>
+<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:text="OK"
+        android:onClick="onOkButtonClick"/>
+</RelativeLayout>

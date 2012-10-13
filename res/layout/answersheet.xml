@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+<!-- 	Answersheet Name -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    
+   		<TextView
+            android:id="@+id/lblAnswersheetName"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+            android:text="@string/lbl_answersheet_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_alignParentLeft="true" 
+            android:paddingRight="20dp"
+		/>
+   		
+   		<EditText
+        android:id="@+id/tvAnswersheetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  		android:paddingLeft="5dip"
+  		android:paddingRight="50dip"
+        android:layout_toRightOf="@+id/lblAnswersheetName"
+        android:typeface="sans" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:hint=""
+        />
+   		
+		
+   		
+</RelativeLayout>
+<!-- Answersheet Name end -->
+<!-- 	select paper begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    
+   		<TextView
+            android:id="@+id/lblPaperName"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+            android:text="@string/lbl_paper_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_alignParentLeft="true" 
+            android:paddingRight="20dp"
+		/>
+   		
+   		<TextView
+        android:id="@+id/tvPaperName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  		android:paddingLeft="5dip"
+  		android:paddingRight="50dip"
+        android:layout_toRightOf="@+id/lblPaperName"
+        android:text="@string/txt_select_aper"
+        
+        android:typeface="sans" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+   		
+		<ImageButton 
+		    android:id="@+id/btnSelectPaper"
+		    android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+		    android:src="@drawable/ic_arrow"
+		    android:layout_alignParentRight="true"
+     		android:layout_centerVertical="true"
+     		android:onClick="onButtonClick"
+     		/>
+   		
+</RelativeLayout>
+<!-- 	select paper end -->
+
+<!-- 	select BPartner begin -->
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="wrap_content" -->
+
+<!--     android:orientation="horizontal" -->
+<!--     android:padding="5dip" > -->
+    
+<!--    		<TextView -->
+<!--             android:id="@+id/lblBp" -->
+<!--         	android:layout_height="wrap_content" -->
+<!--         	android:layout_width="wrap_content" -->
+<!--             android:text="@string/lbl_bp_name" -->
+<!--             android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--             android:textStyle="bold" -->
+<!--             android:typeface="sans" -->
+<!--             android:layout_alignParentLeft="true"  -->
+<!--             android:paddingRight="20dp" -->
+<!-- 		/> -->
+   		
+<!--    		<TextView -->
+<!--         android:id="@+id/txtBp" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--   		android:paddingLeft="5dip" -->
+<!--   		android:paddingRight="50dip" -->
+<!--         android:layout_toRightOf="@+id/lblBp" -->
+<!--         android:text="@string/txt_select_bp" -->
+        
+<!--         android:typeface="sans"  -->
+<!--         android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--         android:textStyle="bold"/> -->
+   		
+<!-- 		<ImageButton  -->
+<!-- 		    android:id="@+id/btnSelectBp" -->
+<!-- 		    android:layout_width="wrap_content" -->
+<!--      		android:layout_height="wrap_content" -->
+<!-- 		    android:src="@drawable/ic_arrow" -->
+<!-- 		    android:layout_alignParentRight="true" -->
+<!--      		android:layout_centerVertical="true" -->
+<!--      		android:onClick="onButtonClick" -->
+<!--      		/> -->
+   		
+<!-- </RelativeLayout> -->
+<!-- 	select halq form end -->
+    
+<!-- 	select Auditor begin -->
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="wrap_content" -->
+
+<!--     android:orientation="horizontal" -->
+<!--     android:padding="5dip" > -->
+    
+<!--    		<TextView -->
+<!--             android:id="@+id/lblAuditor" -->
+<!--         	android:layout_height="wrap_content" -->
+<!--         	android:layout_width="wrap_content" -->
+<!--             android:text="@string/lbl_auditor_list" -->
+<!--             android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--             android:textStyle="bold" -->
+<!--             android:typeface="sans" -->
+<!--             android:layout_alignParentLeft="true"  -->
+<!--             android:paddingRight="20dp" -->
+<!-- 		/> -->
+   		
+<!--    		<TextView -->
+<!--         android:id="@+id/auditors" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--   		android:paddingLeft="5dip" -->
+<!--   		android:paddingRight="50dip" -->
+<!--         android:layout_toRightOf="@+id/lblAuditor" -->
+<!--         android:text="" -->
+        
+<!--         android:typeface="sans"  -->
+<!--         android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--         android:textStyle="bold"/> -->
+   		
+<!-- 		<ImageButton  -->
+<!-- 		    android:id="@+id/btnSelectAuditor" -->
+<!-- 		    android:layout_width="wrap_content" -->
+<!--      		android:layout_height="wrap_content" -->
+<!-- 		    android:src="@drawable/ic_arrow" -->
+<!-- 		    android:layout_alignParentRight="true" -->
+<!--      		android:layout_centerVertical="true" -->
+<!--      		android:onClick="onButtonClick" -->
+<!--      		/> -->
+   		
+<!-- </RelativeLayout> -->
+<!-- 	select Auditor end -->    
+    
+<!-- Date -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    
+   		<TextView
+            android:id="@+id/lblDate"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+            android:text="@string/lbl_date"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_alignParentLeft="true" 
+            android:paddingRight="20dp"
+		/>
+   		
+   		<TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  		android:paddingLeft="5dip"
+  		android:paddingRight="50dip"
+        android:layout_toRightOf="@+id/lblDate"
+        android:text="@string/txt_date"
+        
+        android:typeface="sans" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+   		
+		<ImageButton
+		    android:id="@+id/btnSetDateTime" 
+		    android:layout_width="wrap_content"
+     		android:layout_height="wrap_content"
+		    android:src="@drawable/ic_arrow"
+		    android:layout_alignParentRight="true"
+     		android:layout_centerVertical="true"
+     		android:onClick="onButtonClick"
+     		/>
+   		
+</RelativeLayout>
+<!-- Date end -->
+
+<!-- 	select Attendance begin -->
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="fill_parent" -->
+<!--     android:layout_height="wrap_content" -->
+
+<!--     android:orientation="horizontal" -->
+<!--     android:padding="5dip" > -->
+    
+<!--    		<TextView -->
+<!--             android:id="@+id/lblAttendance" -->
+<!--         	android:layout_height="wrap_content" -->
+<!--         	android:layout_width="wrap_content" -->
+<!--             android:text="@string/lbl_attencance" -->
+<!--             android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--             android:textStyle="bold" -->
+<!--             android:typeface="sans" -->
+<!--             android:layout_alignParentLeft="true"  -->
+<!--             android:paddingRight="20dp" -->
+<!-- 		/> -->
+   		
+<!--    		<TextView -->
+<!--         android:id="@+id/tvAttendance" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--   		android:paddingLeft="5dip" -->
+<!--   		android:paddingRight="50dip" -->
+<!--         android:layout_toRightOf="@+id/lblAttendance" -->
+<!--         android:text="" -->
+        
+<!--         android:typeface="sans"  -->
+<!--         android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--         android:textStyle="bold"/> -->
+   		
+<!-- 		<ImageButton  -->
+<!-- 		    android:id="@+id/btnAttendance" -->
+<!-- 		    android:layout_width="wrap_content" -->
+<!--      		android:layout_height="wrap_content" -->
+<!-- 		    android:src="@drawable/ic_arrow" -->
+<!-- 		    android:layout_alignParentRight="true" -->
+<!--      		android:layout_centerVertical="true" -->
+<!--      		android:onClick="onButtonClick" -->
+<!--      		/> -->
+   		
+<!-- </RelativeLayout> -->
+<!-- 	select Attendance end -->    
+
+<!--         <TableLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:paddingLeft="10dp" -->
+<!--         android:paddingRight="10dp" -->
+<!--         > -->
+<!--         <TableRow > -->
+<!--              <TextView -->
+<!--             android:id="@+id/lblObjective" -->
+<!--             android:layout_height="wrap_content" -->
+<!--         	android:layout_width="250dp" -->
+<!--             android:text="@string/lbl_objective" -->
+<!--             android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--             android:textStyle="bold" -->
+<!--             /> -->
+<!--         	<RadioGroup -->
+<!--             android:id="@+id/field12" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content" -->
+             
+<!--             android:orientation="horizontal" -->
+<!-- 			> -->
+<!--                     <RadioButton -->
+<!--                         android:id="@+id/obj0"  -->
+<!--                         android:paddingLeft="50dip" -->
+<!--                         android:paddingRight="20dip" -->
+<!--                         android:text="@string/lbl_objective0" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium"/> -->
+
+<!--                     <RadioButton  -->
+<!--                         android:id="@+id/obj1" -->
+<!--                         android:paddingLeft="50dip" -->
+<!--                         android:paddingRight="20dip" -->
+<!--                         android:text="@string/lbl_objective1"  -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium"/> -->
+
+<!--                     <RadioButton -->
+<!--                         android:id="@+id/obj2"  -->
+<!--                         android:paddingLeft="50dip" -->
+<!--                         android:paddingRight="20dip" -->
+<!--                         android:text="@string/lbl_objective2"  -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium"/> -->
+
+<!--                     <RadioButton -->
+<!--                         android:id="@+id/obj3"  -->
+<!--                         android:paddingLeft="50dip" -->
+<!--                         android:paddingRight="20dip" -->
+<!--                         android:text="@string/lbl_objective3"  -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium"/> -->
+
+<!--         </RadioGroup> -->
+<!--         </TableRow> -->
+<!--         </TableLayout> -->
+        
+        
+    </LinearLayout>
+</ScrollView>

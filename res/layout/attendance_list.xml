@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal">
+    
+<!-- <LinearLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_centerHorizontal="true"  -->
+<!--         android:id="@+id/input"> -->
+
+<!--         <EditText -->
+<!--             android:id="@+id/editText_input" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_weight="1" -->
+<!--             android:ems="10" > -->
+
+<!--             <requestFocus /> -->
+<!--         </EditText> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/button_add" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_weight="0" -->
+<!--             android:text="Add" /> -->
+<!--     </LinearLayout> -->
+
+<!--     <LinearLayout -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_above="@+id/input" -->
+<!--         android:layout_alignParentTop="true" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:orientation="horizontal" > -->
+
+        <ListView
+            android:id="@+id/listView_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/editText_input">
+        </ListView>
+		<EditText
+            android:id="@+id/editText_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/button_add"
+			
+            android:hint="ชื่อ - นามสกุล"
+            >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Add" />
+<!--     </LinearLayout> -->
+
+
+    
+</RelativeLayout>

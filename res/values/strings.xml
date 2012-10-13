@@ -1,0 +1,62 @@
+<resources>
+
+    <string name="app_name">Halal Checklist</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">ระบบตรวจประเมินการรับรองฮาลาล</string>
+    <string name="title_activity_main_menu">เมนูหลัก</string>
+    <string name="title_activity_paperlist">Paper List</string>
+    <string name="title_activity_questionlist">รายการตรวจประเมิน</string>
+    <string name="title_activity_answersheetlist">ใบตรวจประเมิน</string>
+    <string name="title_activity_answersheet">รายการตรวจประเมิน</string>
+    <string name="title_activity_answersheettab">รายละเอียดใบตรวจประเมิน</string>
+    <string name="start">เริ่มใช้งาน</string>
+    <string name="halq_name">ระบบตรวจประเมินการรับรองฮาลาล</string>
+    
+    <string name="menu_delete">ลบ</string>
+    <string name="lbl_menu_save">บันทึก</string>
+    <string name="lbl_select_paper">เลือกแบบประเมิน</string>
+    <string name="lbl_button_ok">ตกลง</string>
+    
+<!--     Answersheet -->
+	<string name="tab_name_answersheet">ใบตรวจประเมิน</string>
+    <string name="lbl_menu_new_answersheet">สร้างใบตรวจประเมิน</string>
+    <string name="lbl_menu_search_answersheet">ค้นหาใบตรวจประเมิน</string>
+    <string name="lbl_menu_filter_answersheet">กรองใบตรวจประเมิน</string>
+    <string name="lbl_answersheet_name">ชื่อใบประเมิน</string>
+    
+<!--     BPartner -->
+	<string name="tab_name_bpartner">ผู้ประกอบการ</string>
+	<string name="lbl_bp_name">ผู้ประกอบการ</string>
+	<string name="txt_select_bp">เลือกผู้ประกอบการ</string>
+	<string name="lbl_address_office">ที่ตั้งสำนักงาน</string>
+	<string name="lbl_address_factory">ที่ตั้งโรงงาน</string>
+	<string name="lbl_num_of_employee">จำนวนพนักงาน</string>
+	<string name="lbl_num_of_muslim">จำนวนพนักงานมุสลิมห</string>
+	<string name="lbl_num_of_foreigner">จำนวนพนักงานต่างด้าว</string>
+<!-- 	Auditor -->
+	<string name="lbl_auditor_list">รายชื่อ</string>
+	<string name="tab_name_auditor">ผู้ตรวจประเมิน</string>
+	
+<!-- 	Date -->
+	<string name="lbl_date">วันที่ตรวจ</string>
+	<string name="txt_date">dd-mm-yyyy   xx.00 - xx.00</string>
+	<string name="lbl_time_start">เริ่มเวลา</string>
+	<string name="lbl_time_finish">ตรวจเสร็จเวลา</string>
+	
+<!-- 	Attendance -->
+	<string name="lbl_attencance">รายชื่อ</string>
+	<string name="tab_name_attendance">ผู้เข้าร่วมประขุม</string>
+	
+<!-- 	Objective -->
+	<string name="lbl_objective">วัตถุประสงค์</string>
+	<string name="lbl_objective0"></string>
+	<string name="lbl_objective1"></string>
+	<string name="lbl_objective2"></string>
+	<string name="lbl_objective3"></string>
+	
+	<string name="menu_title">เมนู</string>
+	<string name="menu_view">ดูรายละเอียด</string>
+	<string name="menu_send2server">ส่งรายการ</string>
+
+</resources>
